@@ -1,0 +1,22 @@
+RESTFull APIS are made using these 5 points.
+1. Sepperate API into logical resources 
+EX- tours for tout 
+rides for rides
+
+2.Expose structured resource-based URLs
+EX- www.natours.com/tours
+
+3.Use HTTP Methods(verbs)
+There are five types of methods:
+PUT - to update the resource with the whole object provided
+GET -to read the resource
+POST - to create a new object in the resource
+PATCH - to update the resource with only some changes
+DELETE - to delete an object from the resources
+
+So these methods follow CRUD(Create, Read, Update, and Delete) Operations.
+
+
+4. Send data as JSON(usually).
+
+5. Be stateless meaning that all the states should be updated on the client side .The server should not have to remember previous request info.
