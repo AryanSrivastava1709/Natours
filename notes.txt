@@ -20,3 +20,41 @@ So these methods follow CRUD(Create, Read, Update, and Delete) Operations.
 4. Send data as JSON(usually).
 
 5. Be stateless meaning that all the states should be updated on the client side .The server should not have to remember previous request info.
+
+
+//to run different scripts on the same command
+From the provided package.json file, there doesn't appear to be any syntax errors. However, there might be a potential issue with the start:prod script.
+
+The start:prod script is currently set to use PowerShell syntax for setting environment variables ($env:NODE_ENV='production'). This might cause issues if the script is run in a different shell (like Bash or Command Prompt) that doesn't understand this syntax.
+
+If you're planning to use this script in different environments, you might want to consider using a cross-platform solution for setting environment variables, like the cross-env package.
+
+Here's how you can use it:
+
+Install cross-env as a development dependency:
+Update your start:prod script to use cross-env:
+Now, the start:prod script should work correctly in different shells and environments.
+
+//dependencies
+
+
+npm i eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-node eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react --save-dev
+
+
+eslint: This is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+
+prettier: An opinionated code formatter that supports multiple languages and integrates with most editors. It helps ensure that all outputted code conforms to a consistent style.
+
+eslint-config-prettier: This is a config that disables rules that conflict with Prettier. This makes sure that Prettier and ESLint play nicely together.
+
+eslint-plugin-prettier: This plugin allows you to run Prettier as an ESLint rule, and reports differences as individual ESLint issues.
+
+eslint-config-airbnb: This package provides Airbnb's .eslintrc as an extensible shared config. It's a set of rules defined by Airbnb's style guide.
+
+eslint-plugin-node: This ESLint plugin checks for common issues with Node.js scripts, such as deprecated APIs.
+
+eslint-plugin-import: This plugin provides rules that help validate proper imports.
+
+eslint-plugin-jsx-ally: This plugin checks the accessibility of your JSX elements.
+
+eslint-plugin-react: This plugin provides React-specific linting rules for ESLint.
