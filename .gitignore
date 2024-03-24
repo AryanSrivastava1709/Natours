@@ -2,7 +2,7 @@
 node_modules/
 
 // Ignore the config.env file
-config.env
+*.env
 
 // Ignore npm debug logs
 npm-debug.log
@@ -18,3 +18,4 @@ dist/
 
 // Ignore the build directory
 build/
+logs/
