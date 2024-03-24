@@ -2,6 +2,7 @@
   "extends": ["airbnb", "prettier", "plugin:node/recommended"],
   "plugins": ["prettier"],
   "rules": {
+    "eslint-plugin-import/no-useless-path-segments": "off",
     "prettier/prettier": "error",
     "spaced-comment": "off",
     "linebreak-style": "off",
